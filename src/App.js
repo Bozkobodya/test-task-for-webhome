@@ -21,9 +21,11 @@ function App() {
 
   return (
     <div className="App">
-      {coments.map(res => {
-        return <Coment name={res.name} text={res.text} created_at={res.created_at} key={res.id}/>
-      })}
+      <div className="comentsList">
+        {coments.map(res => {
+          return <Coment name={res.name} text={res.text} created_at={res.created_at} key={res.id}/>
+        })}
+      </div>
     </div>
   );
 }
