@@ -66,10 +66,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .coment__name{
+    word-wrap: break-word;
     font-weight: bold;
     flex: 1 1 auto;
 }
 
 .coment__text{
     word-wrap: break-word;
+}
+
+.load__button{
+    margin: 10px 0px;
+}
+
+.pagination{
+    margin: 10px 0px;
 }
