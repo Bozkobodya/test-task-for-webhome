@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css';
 import axios from 'axios'
-import Coment from './components/Coment';
+import Coment from './components/Comment';
 import {Pagination} from '@material-ui/lab'
 import {Button} from '@material-ui/core'
 
@@ -67,15 +67,15 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="h1">Coments</h1>
+      <h1 className="h1">Comments</h1>
       <div>
         <form className="form">
           {error ? <div className="form__el red_text">*All fields should be filled</div> : <span/>}
           <div className="form__el">Username:</div>
           <div className="form__el"><input value={userText} onChange={e => setUserText(userText = e.target.value)} className="input" type="text"/></div>
-          <div className="form__el">Coment:</div>
+          <div className="form__el">Comment:</div>
           <div className="form__el input"><textarea value={comentText} className="textarea" onChange={e => setComentText(comentText  = e.target.value)} rows="10" cols="45" name="text"></textarea></div>
-          <Button onClick={sendComent} variant="contained" color="primary">Add coment</Button>
+          <Button onClick={sendComent} variant="contained" color="primary">Add comment</Button>
         </form>
       </div>
       <div className="coment__section">
